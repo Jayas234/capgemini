@@ -1,0 +1,16 @@
+<html>
+<head> </head>
+<body> 
+<input type="number" id="fahrenheit" onkeyup="convert('F')"> 
+<input type="number" id="celsius" onkeyup="convert('C')"> 
+<script> function convert(degree) 
+{ var x; if (degree == "C") 
+{ x = document.getElementById("celsius").value * 9 / 5 + 32;
+document.getElementById("fahrenheit").value = x; } 
+else 
+{ x = (document.getElementById("fahrenheit").value -32) * 5 / 9;
+document.getElementById("celsius").value = x; }
+} 
+</script>
+</body> 
+</html>
